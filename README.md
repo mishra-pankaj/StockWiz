@@ -1,6 +1,6 @@
-# 📈 StockWise: AI-Powered Stock Analysis Platform
+# 📈 StockWiz: AI-Powered Stock Analysis Platform
 
-**StockWise** is a full-stack financial analysis tool designed to bridge the gap between raw market data and actionable insights. By combining real-time market data with Large Language Models (LLM), it provides users with automated, intelligent investment summaries.
+**StockWiz** is a full-stack financial analysis tool designed to bridge the gap between raw market data and actionable insights. By combining real-time market data with Large Language Models (LLM), it provides users with automated, intelligent investment summaries.
 
 ---
 
