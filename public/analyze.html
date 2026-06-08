@@ -795,7 +795,25 @@
           headers: { 'Authorization': `Bearer ${token}` }
         });
 
-        if (!recRes.ok) throw new Error('Analysis failed. Please try again.');
+        // If AI analysis fails
+        if (!recRes.ok) {
+          recDiv.innerHTML = `
+            <div class="rec-title">AI Recommendation</div>
+
+            <div class="rec-value hold">UNAVAILABLE</div>
+
+            <div class="rec-badge hold">HOLD</div>
+
+            <div class="rec-description">AI Service Down</div>
+
+            <div style="margin-top:1rem;color:var(--muted);font-size:0.9rem;">\
+              Stock data loaded successfully, but AI recommendation is currently unavailable.\
+            </div>
+
+          `;
+
+          return;
+        }
 
         const recData = await recRes.json();
         const response = recData.geminiResponse;

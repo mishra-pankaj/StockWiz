@@ -1,4 +1,4 @@
-import { getStockMetrics } from "../services/geminiService.js";
+import { getStockMetrics } from "../services/finnhubService.js";
 
 export async function getStock(req, res) {
   try {
